@@ -38,3 +38,5 @@ and inside the file :
   });
 
 8.npm install mysql
+
+9.remember to match your database and password in controller.js file
