@@ -1,0 +1,24 @@
+<%- include('../partials/head.ejs')  %> 
+    <h1 class="text-center">index page</h1>
+    <p class="text-center"><%= text %></p>
+    <div class="container" >
+        <a class="btn bg-primary text-light mb-3" href="/images/catboy.jpg" download="catboy">download</a>
+      <img style="width: 100%;" src="/image/catboy.jpg" alt="">  
+    </div>
+
+    <div class="container d-flex ml-5 ">
+        <% 
+        if(blogs.length >0){
+            blogs.forEach(blog => {%>
+                <div class="p-5">
+              <h1><%= blog.title %></h1>   
+              <p><%= blog.snippets %></p> 
+              </div>
+          <%  });
+            }
+        %>
+        </div>
+    
+   
+</body>
+</html>
