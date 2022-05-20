@@ -5,9 +5,13 @@ HOW TO START NODE JS
 3.npm install express
 4.npm install ejs
 
+5.npm install cors
+
 5.make a file and name it app.js which contains these  lines at the top:
 const express =require('express')
+const cors = require('cors');
 const app = express()
+
 app.set('view engine','ejs')  //which atumaticly looks at views folder
 
 const controller = require('./controllers/controller.js')
