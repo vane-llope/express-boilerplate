@@ -19,6 +19,7 @@ app.listen(3000,() => {
   console.log('listening on port 3000')
 })
 
+//parses the data comming from a post request
 app.use(express.urlencoded({ extended : true}))
 app.use(express.static('public'))
 
